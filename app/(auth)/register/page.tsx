@@ -1,10 +1,8 @@
-import React from "react";
-
-const Page = () =>
+const page = () =>
 {
 	return (
-		<div>Hello there!</div>
+		<div>page</div>
 	);
 };
 
-export default Page;
+export default page;

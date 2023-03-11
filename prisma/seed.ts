@@ -52,6 +52,7 @@ async function main()
 
 	console.log({ user, tasks });
 }
+
 main()
 	.then(async () =>
 	{

@@ -1,17 +1,17 @@
-const RootLayout = ({ children }: { children: React.ReactNode }) =>
+import "@/styles/global.css";
+
+const layout = ({ children } : any) =>
 {
 	return (
 		<html lang="en">
-			{/*
-        <head /> will contain the components returned by the nearest parent
-        head.tsx. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
-      */}
 			<head />
-			<body style={{ backgroundColor: "black", color: "white"}}>
-				{children}
+			<body className="h-screen w-screen rainbow-mesh p-6">
+				<div className="w-full h-full flex items-center justify-center">
+					{children}
+				</div>
 			</body>
 		</html>
 	);
 };
 
-export default RootLayout;
+export default layout;

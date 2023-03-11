@@ -1,0 +1,18 @@
+import clsx from "clsx";
+
+const Input = ({ className, ...props }) =>
+{
+	return (
+		<input
+			className={clsx(
+				"border-solid border-gray border-2 px-6 py-2 text-lg rounded-3xl w-full",
+				className
+			)}
+			// Notice this is a sever component, however, we push that responsibility away to the client
+			// The form should handle that responsibility, not the component and pass it here
+			{...props}
+		/>
+	);
+};
+
+export default Input;

@@ -19,13 +19,6 @@
 		"arrow-body-style": "off",
 		"prefer-arrow-callback": "off",
 		"react/jsx-filename-extension": "off",
-		"react/function-component-definition": [
-			"error",
-			{
-				"namedComponents": "arrow-function",
-				"unnamedComponents": "arrow-function"
-			}
-		],
 		"no-mixed-spaces-and-tabs": 0,
 		"indent": ["warn", "tab"],
 		"no-multiple-empty-lines": "warn",
