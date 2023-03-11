@@ -1,7 +1,8 @@
 import "@/styles/global.css";
 import GlassPane from "@/components/GlassPane";
+import Sidebar from "@/components/Sidebar";
 
-export default function DashboardRootLayout({children}: any)
+export default function DashboardRootLayout({ children }: any)
 {
 	return (
 		<html lang="en">
@@ -9,6 +10,7 @@ export default function DashboardRootLayout({children}: any)
 			<body className="h-screen w-screen candy-mesh p-6">
 				<GlassPane
 					className="w-full h-full flex items-center">
+					<Sidebar />
 					{children}
 				</GlassPane>
 				<div id="modal"></div>

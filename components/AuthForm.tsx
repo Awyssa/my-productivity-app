@@ -145,7 +145,4 @@ const AuthForm = ({ mode }: { mode: "register" | "signin" } ) =>
 	);
 };
 
-
 export default AuthForm;
-
-

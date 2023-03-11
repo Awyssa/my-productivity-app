@@ -1,7 +1,9 @@
+import GreetingsSkeleton from "@/components/GreetingsSkeleton";
+
 const loading = () =>
 {
 	return (
-		<div>loading</div>
+		<GreetingsSkeleton />
 	);
 };
 

@@ -7,6 +7,7 @@ export default async function signin(req: NextApiRequest, res: NextApiResponse)
 {
 	if (req.method === "POST")
 	{
+		// You should verify and sanities all the inputs for production
 		const user = await db.user.findUnique({
 			where: {
 				email: req.body.email
