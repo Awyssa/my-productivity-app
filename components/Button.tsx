@@ -2,6 +2,7 @@ import { cva, VariantProps } from "class-variance-authority";
 import { FC } from "react";
 
 const buttonClasses = cva(
+	// Apply these classes to all the buttons
 	[
 		"rounded-3xl",
 		"font-bold",
@@ -12,8 +13,9 @@ const buttonClasses = cva(
 		"ease-in-out",
 	],
 	{
+		// Set some variants
 		variants: {
-			intent: { 
+			intent: {
 				primary: [
 					"bg-violet-500",
 					"text-white",
@@ -31,12 +33,14 @@ const buttonClasses = cva(
 				],
 				text: ["bg-transparent", "text-black", "hover:bg-gray-100"],
 			},
+			// Add sizes
 			size: {
 				small: ["text-md", "py-1", "px-2"],
 				medium: ["text-lg", "px-6", "py-2"],
 				large: ["text-xlg", "px-8", "py-4"],
 			},
 		},
+		// Default variants if nothing is passed in
 		defaultVariants: {
 			intent: "primary",
 			size: "medium",

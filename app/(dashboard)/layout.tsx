@@ -1,8 +1,18 @@
-const layout = () =>
+import "@/styles/global.css";
+import GlassPane from "@/components/GlassPane";
+
+export default function DashboardRootLayout({children}: any)
 {
 	return (
-		<div>layout</div>
+		<html lang="en">
+			<head />
+			<body className="h-screen w-screen candy-mesh p-6">
+				<GlassPane
+					className="w-full h-full flex items-center">
+					{children}
+				</GlassPane>
+				<div id="modal"></div>
+			</body>
+		</html>
 	);
-};
-
-export default layout;
+}
