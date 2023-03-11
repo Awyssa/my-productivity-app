@@ -1,1 +1,1 @@
-Productivity app using Next 13 and Prisma
+Productivity app using Next.js 13, Tailwind, and Prisma

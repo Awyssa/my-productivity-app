@@ -1,6 +1,6 @@
 import "@/styles/global.css";
-
 import GlassPane from "@/components/GlassPane";
+
 
 const layout = ({ children } : any) =>
 {
